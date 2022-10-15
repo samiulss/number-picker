@@ -28,6 +28,7 @@ body{
   top: -43px;
   border: 2px solid #333;
   background: lime;
+  border-radius: 8px;
   padding: 2px;
   color: #333;
   cursor: pointer;
