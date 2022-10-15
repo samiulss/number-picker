@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    background: red;
+    width: 100%;
+    height: 630px;
+    margin: auto;
+    position: relative;
+}
+.display{
+    width: 99%;
+    height: 180px;
+    background: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 15px;
+    margin: auto;
+    text-align: center;
+}
+#mode{
+  font-size: 17px;
+  letter-spacing: 0px;
+  position: absolute;
+  right: 2px;
+  top: -43px;
+  border: 2px solid #333;
+  background: lime;
+  padding: 2px;
+  color: #333;
+  cursor: pointer;
+}
+.points{
+    position: absolute;
+    top: 185px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.points p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.marks{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 0px;
+}
+.btn-area{
+    width: 99%;
+    height: 380px;
+    background: yellow;
+    margin: auto;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    left: 0;
+}
+button{
+    margin: 10px;
+    width: 76px;
+    height: 76px;
+    border: none;
+    border-radius: 50%;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+#y-btn{
+    background: orange;
+}
+#r-btn{
+    background: lime;
+}
+#x-btn{
+    background: cornflowerblue;
+}
+#w-btn{
+    background: tomato;
+}
+.btn{
+    max-width: 300px;
+    margin: auto;
+}
+span{
+    font-size: 70px;
+    letter-spacing: 5px;
+    display: inline-block;
+    margin-top: 45px;
+}
+#match-nmbr{
+    display: none;
+}
+.img{
+    width: 150px;
+    display: none;
+    margin: 15px 95px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.img-w{
+  width: 140px;
+  margin-top: 20px;
+}
