@@ -2,6 +2,8 @@ body{
     margin: 0;
     padding: 0;
 }
+
+/* FULL DISPLAY */
 .box{
     background: red;
     width: 100%;
@@ -9,6 +11,8 @@ body{
     margin: auto;
     position: relative;
 }
+
+/* SCREEN AREA */
 .display{
     width: 99%;
     height: 180px;
@@ -34,26 +38,13 @@ body{
   cursor: pointer;
 }
 input{
-    width: 40px;
+    width: 70px;
     position: absolute;
-    right: 39px;
-    top: 40px;
+    right: 3px;
+    top: 35px;
     border-radius: 30px;
     border: 2px solid tomato;
     padding: 2px;
-}
-#set-btn{
-    width: 30px;
-    font-size: 15px;
-    letter-spacing: -1px;
-    position: absolute;
-    top: 40px;
-    right: 0;
-    margin: 0;
-    padding: 3px;
-    background: tomato;
-    border-radius: 30px;
-    cursor: pointer;
 }
 .custom-area{
     display: none;
@@ -65,6 +56,30 @@ input{
     right: 0;
     text-align: center;
 }
+span{
+    font-size: 70px;
+    letter-spacing: 5px;
+    display: inline-block;
+    margin-top: 45px;
+}
+#match-nmbr{
+    display: none;
+}
+.img{
+    width: 150px;
+    display: none;
+    margin: 15px 95px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.img-w{
+  width: 140px;
+  margin-top: 20px;
+}
+
+/* POINTS AREA */
 .points p{
     font-size: 20px;
     font-weight: bold;
@@ -75,6 +90,8 @@ input{
     margin: 0;
     letter-spacing: 0px;
 }
+
+/* BUTTON AREA */
 .btn-area{
     width: 99%;
     height: 380px;
@@ -110,26 +127,4 @@ button{
 .btn{
     max-width: 300px;
     margin: auto;
-}
-span{
-    font-size: 70px;
-    letter-spacing: 5px;
-    display: inline-block;
-    margin-top: 45px;
-}
-#match-nmbr{
-    display: none;
-}
-.img{
-    width: 150px;
-    display: none;
-    margin: 15px 95px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-.img-w{
-  width: 140px;
-  margin-top: 20px;
 }

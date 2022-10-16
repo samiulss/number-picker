@@ -1,8 +1,9 @@
-// MAIN SECTION
 const num1 = document.getElementById("random-nmbr");
 const num2 = document.getElementById("match-nmbr");
 const rightImg = document.getElementById("right-img");
 const wrongImg = document.getElementById("wrong-img");
+
+//RANDOM NUMBER
 function randomNmbr(){
   let randomNmber = Math.round(Math.random() * 100000);
   let addString = randomNmber + "";
@@ -15,6 +16,7 @@ function randomNmbr(){
   return addString;
 }
 
+//MODE CHANGE HANDLER
 document.getElementById("mode").addEventListener('click', changeMode());
 function changeMode(){
   let modeBtn = document.getElementById("mode").innerText;
@@ -23,10 +25,12 @@ function changeMode(){
     document.getElementById("mode").innerText = 'EASY';
     document.getElementById("mode").style.background = 'lime';
     document.getElementById("custom-btn").style.display = "none";
+    num1.innerText = "PLAY"
   }
   if (modeBtn == 'EASY') {
     document.getElementById("mode").innerText = 'CUSTOM';
     document.getElementById("mode").style.background = 'skyblue';
+    num1.innerText = "SET TIME"
   }
   if (modeBtn == "EASY") {
     num1.addEventListener("click", function(){
@@ -43,11 +47,13 @@ function changeMode(){
   return changeMode;
 }
 
+//CUSTOM TIME SET FUNTION
 function customSec(){
   let getSec = document.getElementById("custom-sec").value;;
   return getSec;
 }
 
+//BUTTON CLICK HANDLER
 Array.from(
     document.getElementsByTagName("button")
 )
@@ -105,6 +111,7 @@ function handler(event){
     }
 }
 
+//IMAGE HANDER
 Array.from(
   document.getElementsByTagName("img")
 )
@@ -129,6 +136,8 @@ function imgHandl(){
   rightImg.style.display = "none";
   wrongImg.style.display = "none";
 }
+
+//TIME OUT FUNTION
 function vanished(){
   num1.style.display = 'none';
   return vanished;
