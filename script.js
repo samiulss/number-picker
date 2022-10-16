@@ -30,7 +30,7 @@ function changeMode(){
   if (modeBtn == 'EASY') {
     document.getElementById("mode").innerText = 'CUSTOM';
     document.getElementById("mode").style.background = 'skyblue';
-    num1.innerText = "SET TIME"
+    num1.innerText = "SET TIME";
   }
   if (modeBtn == "EASY") {
     num1.addEventListener("click", function(){

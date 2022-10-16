@@ -57,10 +57,13 @@ input{
     text-align: center;
 }
 span{
-    font-size: 70px;
+    font-size: 40px;
     letter-spacing: 5px;
     display: inline-block;
     margin-top: 45px;
+}
+#random-nmbr{
+    margin-top: 63px;
 }
 #match-nmbr{
     display: none;
