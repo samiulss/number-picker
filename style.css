@@ -29,9 +29,34 @@ body{
   border: 2px solid #333;
   background: lime;
   border-radius: 8px;
-  padding: 2px;
+  padding: 3px;
   color: #333;
   cursor: pointer;
+}
+input{
+    width: 40px;
+    position: absolute;
+    right: 39px;
+    top: 40px;
+    border-radius: 30px;
+    border: 2px solid tomato;
+    padding: 2px;
+}
+#set-btn{
+    width: 30px;
+    font-size: 15px;
+    letter-spacing: -1px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin: 0;
+    padding: 3px;
+    background: tomato;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.custom-area{
+    display: none;
 }
 .points{
     position: absolute;

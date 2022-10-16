@@ -18,26 +18,34 @@ function randomNmbr(){
 document.getElementById("mode").addEventListener('click', changeMode());
 function changeMode(){
   let modeBtn = document.getElementById("mode").innerText;
-  if (modeBtn == 'EASY') {
-    document.getElementById("mode").innerText = 'HARD'
-    document.getElementById("mode").style.background = 'red';
-  }
-  if (modeBtn == 'HARD') {
+
+  if (modeBtn == 'CUSTOM') {
     document.getElementById("mode").innerText = 'EASY';
     document.getElementById("mode").style.background = 'lime';
+    document.getElementById("custom-btn").style.display = "none";
+  }
+  if (modeBtn == 'EASY') {
+    document.getElementById("mode").innerText = 'CUSTOM';
+    document.getElementById("mode").style.background = 'skyblue';
   }
   if (modeBtn == "EASY") {
     num1.addEventListener("click", function(){
       randomNmbr();
-      const myTimeout = setTimeout(vanished, 4000);
+      const myTimeout = setTimeout(vanished, customSec());
     })
+    document.getElementById("custom-btn").style.display = "block";
   }
-  if (modeBtn == "HARD") {
+  if (modeBtn == "CUSTOM") {
     num1.addEventListener("click", function(){
       randomNmbr();
     })
   }
   return changeMode;
+}
+
+function customSec(){
+  let getSec = document.getElementById("custom-sec").value;;
+  return getSec;
 }
 
 Array.from(
@@ -108,9 +116,9 @@ Array.from(
 function imgHandl(){
   randomNmbr()
   let modeBtn = document.getElementById("mode").innerText;
- if (modeBtn == "HARD") {
+ if (modeBtn == "CUSTOM") {
   num1.style.display = "block";
-  const myTimeout = setTimeout(vanished, 4000);
+  const myTimeout = setTimeout(vanished, customSec());
  }
  else{
   num1.style.display = "block";
