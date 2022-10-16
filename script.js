@@ -67,11 +67,9 @@ function handler(event){
                     point = point + 10;
                     document.getElementById("point").innerText = point;
                 }
-                else if (num2 == "") {
-                    wrongImg.style.display = "none";
-                }
                 else {
                     wrongImg.style.display = "block";
+                    num1.style.display = "none";
                     num2.style.display = "none";
                     const audio = new Audio('notMatch.mp3');
                     audio.play();
