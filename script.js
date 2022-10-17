@@ -68,6 +68,9 @@ function handler(event){
     switch (key) {
         case "C":
             num2.innerText = num2.innerText.slice(0, -1);
+            if (num2.innerText == "") {
+              disabledBtn();
+            }
             break;
 
         case "OK":
@@ -80,7 +83,10 @@ function handler(event){
                     point = parseInt(point)
                     point = point + 10;
                     document.getElementById("point").innerText = point;
-                    btnDisabled();
+                    if (disabledBtn()) {
+                      disabledBtn();
+                    }
+                    num1.innerText = "";
                 }
                 else {
                     wrongImg.style.display = "block";
@@ -109,6 +115,9 @@ function handler(event){
                 document.getElementById("match-nmbr").innerText = "";
             }
             document.getElementById("ok-btn").disabled = false;
+            if (num2.innerText == "") {
+              disabledBtn();
+            }
             break;
     }
 }
@@ -146,6 +155,6 @@ function vanished(){
 }
 
 //OK BUTTON DISABLED
-function btnDisabled() {
+function disabledBtn() {
   document.getElementById("ok-btn").disabled = true;
 }
