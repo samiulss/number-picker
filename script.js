@@ -80,6 +80,7 @@ function handler(event){
                     point = parseInt(point)
                     point = point + 10;
                     document.getElementById("point").innerText = point;
+                    btnDisabled();
                 }
                 else {
                     wrongImg.style.display = "block";
@@ -107,6 +108,7 @@ function handler(event){
             if (num2.innerText > 100000 || num2.innerText == "000000") {
                 document.getElementById("match-nmbr").innerText = "";
             }
+            document.getElementById("ok-btn").disabled = false;
             break;
     }
 }
@@ -141,4 +143,9 @@ function imgHandl(){
 function vanished(){
   num1.style.display = 'none';
   return vanished;
+}
+
+//OK BUTTON DISABLED
+function btnDisabled() {
+  document.getElementById("ok-btn").disabled = true;
 }

@@ -45,6 +45,7 @@ input{
     border-radius: 30px;
     border: 2px solid tomato;
     padding: 2px;
+    padding-left: 5px;
 }
 .custom-area{
     display: none;
@@ -67,6 +68,7 @@ span{
 }
 #match-nmbr{
     display: none;
+    margin-top: 63px;
 }
 .img{
     width: 150px;
@@ -115,16 +117,16 @@ button{
     font-size: 25px;
 }
 
-#y-btn{
+.y-btn{
     background: orange;
 }
-#r-btn{
+.r-btn{
     background: lime;
 }
-#x-btn{
+.x-btn{
     background: cornflowerblue;
 }
-#w-btn{
+.w-btn{
     background: tomato;
 }
 .btn{
